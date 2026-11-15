@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/KutuphaneApi/KutuphaneApi.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/KutuphaneApi.Tests/KutuphaneApi.Tests.csproj" />
+  </Folder>
+</Solution>

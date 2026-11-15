@@ -1,0 +1,24 @@
+@host = http://localhost:5000
+
+### Sağlık kontrolü
+GET {{host}}/saglik
+
+### Kitapları listele (arama, ödünç filtresi, sayfalama)
+GET {{host}}/api/kitaplar?arama=clean&sayfa=1&boyut=10
+
+### Yeni kitap ekle (ISBN'in sağlama toplamı doğrulanır)
+POST {{host}}/api/kitaplar
+Content-Type: application/json
+
+{ "baslik": "Temiz Kod", "yazar": "Robert C. Martin", "isbn": "978-0-13-235088-4", "yayinYili": 2008 }
+
+### Kısmi güncelleme
+PATCH {{host}}/api/kitaplar/1
+Content-Type: application/json
+
+{ "baslik": "Clean Code (2. baskı)" }
+
+### Ödünç ver / iade al
+POST {{host}}/api/kitaplar/1/odunc
+###
+POST {{host}}/api/kitaplar/1/iade
