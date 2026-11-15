@@ -1,5 +1,7 @@
 # 📚 Kütüphane API (ASP.NET Core)
 
+[![Testler](https://github.com/sumeyyeealtintas/kutuphane-api-dotnet/actions/workflows/ci.yml/badge.svg)](https://github.com/sumeyyeealtintas/kutuphane-api-dotnet/actions/workflows/ci.yml)
+
 **C# / ASP.NET Core Minimal API** ile yazılmış kitap yönetimi servisi. Kitap ekleme, arama, güncelleme, silme ve **ödünç verme / iade akışı** içerir. ISBN numaralarının **sağlama toplamı (check digit)** doğrulanır.
 
 ## 🧰 Teknolojiler
